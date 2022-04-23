@@ -1,0 +1,25 @@
+@custom-selector :--heading h2, h3;
+
+.box {
+	max-width: 800px;
+	height: 600px;
+	border: 1px solid black;
+	container-name: box;
+	container-type: inline-size;
+}
+
+@container box size(max-width: 750px) {
+	button {
+		background-color: purple;
+	}
+}
+
+@media (width <= 1000px) {
+	body {
+		background-color: blue;
+	}
+}
+
+:--heading {
+	margin-bottom: 2cm;
+}
